@@ -13,7 +13,7 @@ const Index = () => {
             <Icon name="Cross" size={28} />
             <div>
               <h1 className="text-2xl font-bold">Память</h1>
-              <p className="text-sm opacity-90">Ритуальные услуги</p>
+              <p className="text-sm opacity-90">Центр ритуальных услуг в городе Гагарин</p>
             </div>
           </div>
           <div className="text-right">
@@ -262,7 +262,7 @@ const Index = () => {
             <h3 className="text-xl font-bold">Память</h3>
           </div>
           <p className="text-sm opacity-75 mb-4">
-            Ритуальные услуги с заботой и уважением к памяти ваших близких
+            Центр ритуальных услуг в городе Гагарин. Заботимся о памяти ваших близких
           </p>
           <Separator className="my-4 bg-primary-foreground/20" />
           <p className="text-xs opacity-60">
