@@ -205,19 +205,152 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Memorial Image Section */}
+      {/* Monument Gallery Section */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto text-center">
-          <img 
-            src="/img/36fcdf2d-7c28-4926-aa8a-ae495b2d3959.jpg" 
-            alt="Памятник с цветами" 
-            className="rounded-lg shadow-lg mx-auto mb-8 max-w-2xl w-full"
-          />
-          <h2 className="text-3xl font-bold mb-4">Вечная память</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Мы помогаем сохранить память о ваших близких на долгие годы. 
-            Каждый памятник — это не просто камень, это символ любви и уважения к ушедшему человеку.
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">Галерея памятников</h2>
+          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+            Мы изготавливаем памятники из различных материалов и в разных стилях. 
+            Каждый памятник — это символ любви и уважения к ушедшему человеку.
           </p>
+          
+          {/* Filter Buttons */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <Button variant="default" size="sm">Все типы</Button>
+            <Button variant="outline" size="sm">Гранит</Button>
+            <Button variant="outline" size="sm">Мрамор</Button>
+            <Button variant="outline" size="sm">Кресты</Button>
+            <Button variant="outline" size="sm">Современные</Button>
+            <Button variant="outline" size="sm">Семейные</Button>
+          </div>
+
+          {/* Gallery Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/img/53f30401-1b87-4bb7-9584-9d0c42ce434a.jpg" 
+                  alt="Гранитный памятник с крестом" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold mb-2">Классический гранитный</h3>
+                <p className="text-sm text-muted-foreground mb-3">Темно-серый гранит с гравировкой креста и цветочным орнаментом</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-primary">от 35 000 ₽</span>
+                  <Button size="sm" variant="outline">Подробнее</Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/img/c95bdcd1-4c80-469a-b36e-8857f7c3acba.jpg" 
+                  alt="Мраморный памятник с ангелом" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold mb-2">Мраморный с ангелом</h3>
+                <p className="text-sm text-muted-foreground mb-3">Белый мрамор со скульптурой ангела, классический дизайн</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-primary">от 85 000 ₽</span>
+                  <Button size="sm" variant="outline">Подробнее</Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/img/21e2ba30-e925-45a4-b677-a6d24a17926c.jpg" 
+                  alt="Черный гранит с золотой надписью" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold mb-2">Премиум черный гранит</h3>
+                <p className="text-sm text-muted-foreground mb-3">Полированный черный гранит с золотой гравировкой</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-primary">от 65 000 ₽</span>
+                  <Button size="sm" variant="outline">Подробнее</Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/img/9f57d6ab-744f-4c43-9a39-c844f3c4bdd1.jpg" 
+                  alt="Двойной семейный памятник" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold mb-2">Семейный двойной</h3>
+                <p className="text-sm text-muted-foreground mb-3">Серый гранит для двоих с резьбой в виде сердца</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-primary">от 95 000 ₽</span>
+                  <Button size="sm" variant="outline">Подробнее</Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/img/f046f9ec-ceed-4a32-a00b-2cc3e6bd98de.jpg" 
+                  alt="Каменный крест кельтский" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold mb-2">Каменный крест</h3>
+                <p className="text-sm text-muted-foreground mb-3">Традиционный крест из натурального камня</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-primary">от 45 000 ₽</span>
+                  <Button size="sm" variant="outline">Подробнее</Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/img/9ce178d4-d59d-4de9-93f1-6b25418fe6d8.jpg" 
+                  alt="Современный минималистичный памятник" 
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-semibold mb-2">Современный стиль</h3>
+                <p className="text-sm text-muted-foreground mb-3">Минималистичный дизайн из полированного гранита</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-lg font-bold text-primary">от 55 000 ₽</span>
+                  <Button size="sm" variant="outline">Подробнее</Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-12">
+            <p className="text-muted-foreground mb-6">
+              Не нашли подходящий вариант? Мы изготовим памятник по вашему индивидуальному заказу.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg">
+                <Icon name="Phone" size={20} className="mr-2" />
+                Заказать консультацию
+              </Button>
+              <Button variant="outline" size="lg">
+                <Icon name="FileText" size={20} className="mr-2" />
+                Скачать каталог
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
